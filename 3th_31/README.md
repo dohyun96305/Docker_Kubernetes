@@ -1,4 +1,4 @@
-# Third Practice
+# 3th Practice - Manging Docker Image and Container
 
 * 여러가지 docker command 정리
                 
@@ -97,27 +97,29 @@
         # Dockerhub 계정과 로컬과의 연결 => 개인 Reop에 push하기 위해 필요함.
 
 
-- attached mode
+- **Attached mode**
     - Terminal과 연결된 상태 ⇒ 컨테이너의 출력 결과가 Terminal에 출력
     - docker run ⇒ attached mode가 default
     
-- detached mode
+- **Detached mode**
     - Terminal과 분리된 상태 ⇒ 컨테이너 출력 결과가 Terminal에 출력 되지 않음
         - 컨테이너 출력 결과, 로그 메세지 등 확인되지 않음
         - 컨테이너 백그라운드 실행하면서 다른 작업을 수행할 수 있음
     - docker start ⇒ detached mode가 default
 
-- interactive mode
+- **Interactive mode**
     - attached, detached container내 애플리케이션과 상호 작용 (입력 등) 할 수 없다.
         - ex) 기존  container 내 .py 파일 내 int( input() ) 같은 경우 error 발생
     - interactive mode 및 Terminal 생성을 통해 애플리케이션 내 상호 작용 진행
     - 종료된 Container 재시작할 때 attached 모드 및 interactive 모드 재진입 해야함
 
-- About Image Tags
+</br>
 
+- About Image Tags
     - name ⇒ 이미지의 여러 버전에 대한 그룹 , tags ⇒ 이미지 내 특정 버전
     - docker build -t **name:tag** ⇒ name, tag 설정 가능   
 
+</br>
 
 - 이미지를 기반으로 컨테이너 생성 가능 ⇒ 이미지를 주로 공유한다.
     - Dockerfile 및 Dockerfile이 속한 파일 및 코드 파일 공유

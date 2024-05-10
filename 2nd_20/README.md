@@ -1,4 +1,4 @@
-# Second Practice
+# 2nd Practice - Docker Image
   
 * Server.js => 기본 Node 애플리케이션 코드가 포함된 서버 JS 파일   
   * 포트 80에서 수신 대기 

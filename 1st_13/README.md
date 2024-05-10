@@ -1,4 +1,4 @@
-# First Practice 
+# 1st Practice - Docker Container
 
 Docker, Container 없이 app.mjs 실행하기 위해서는 NodeJS 설치가 필요하다. <br/>
 npm install 를 통해 app.mjs를 실행하기 위해 package.json 설치 
