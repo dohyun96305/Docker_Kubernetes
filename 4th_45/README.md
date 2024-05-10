@@ -23,7 +23,7 @@ When need to save data whenever Container is removed or not, **need to make Volu
         # it makes files that inside of Container move to Outside of Container 
 
         ...
-        **VOLUME [ "/app/feedback" ]**
+        VOLUME [ "/app/feedback" ]
         ...
 
         # Anonymous Volumes 
@@ -32,18 +32,18 @@ When need to save data whenever Container is removed or not, **need to make Volu
         # only specify path inside of Container, not path outside of Container
         # removed when container removed because docker recreated volume anonymously
 
-        **docker volume ls** 
+        docker volume ls
         # check Volumes
 
-        **docker volume rm "VOL_NAME'**
-        **docker volume prune** 
+        docker volume rm "VOL_NAME'
+        docker volume prune** 
         # delete Volumes 
 
-        **docker run ~~ -v feedback:/app/feedback ~~**
+        docker run ~~ -v feedback:/app/feedback ~~
         # Named Volumes 
         # not edit in Dockerfile, but on CMD Line when we execute Docker Container
 
-        # **-v feedback:/app/feedback**
+        # -v feedback:/app/feedback
             => feedback: specify name of volumes 
             => /app/feedback : specify path inside of Docker Container to save
         # not removed when container is removed 
