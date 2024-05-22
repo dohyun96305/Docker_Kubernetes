@@ -1,0 +1,8 @@
+node_modules
+
+# specify file or folder path not to copied by a copy instructions at Dockerfile
+
+# Executed when COPY . . 
+# By add file for folder path in .dockerignore
+# => not copy Local file to inside of Docker Container
+# => not to override of Docker Container file 
